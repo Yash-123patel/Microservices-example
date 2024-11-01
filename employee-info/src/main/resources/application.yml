@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: employee-info
+  config:
+    import: "optional:configserver:http://localhost:9999"
+
+
+
+
+
+
+
+
+
+
+
+

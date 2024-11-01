@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: cloud-gateway
+  cloud:
+    gateway:
+      mvc:
+        routes:
+          - id: employee-info
+            uri: http://localhost:8082/
+            predicates:
+              - Path=/employee/**
+          - id: department-info
+            uri: http://localhost:8081/
+            predicates:
+              - Path=/department/**
+          - id: address-info
+            uri: http://localhost:8083/
+            predicates:
+              - Path=/address/**
+server:
+  port: 7777

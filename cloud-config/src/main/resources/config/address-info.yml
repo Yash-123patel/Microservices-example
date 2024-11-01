@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    url: jdbc:oracle:thin:@localhost:1521:Xe
+    username: ADDRESS
+    password: PATEL
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+server:
+  port: 8083
+  servlet:
+    context-path: /address
